@@ -1,0 +1,337 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.Platform</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1126,3825" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="upr:IResource" Name="fisiereCSV" />
+      <Variable x:TypeArguments="x:String" Name="caleCSV" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="tabelFilme" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="filmeSelectate" />
+      <Variable x:TypeArguments="x:String" Name="currentFilm" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="dtTopNetflix" />
+      <Variable x:TypeArguments="x:String" Name="popcornmeter" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="randomFilme" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="tabelExtras" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:SelectFile InitialDirectory="{x:Null}" Multiselect="{x:Null}" SelectedFiles="{x:Null}" DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="578,172" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[caleCSV]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Top 10 Movies on Netflix Right Now" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="578,3630" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="113f9724-df3e-4d6a-8f60-2643b98eecd6" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="576,3440" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtTopNetflix]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,190" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="113f9724-df3e-4d6a-8f60-2643b98eecd6" Version="V5">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.netflix.com/tudum/top10" ContentHash="WZru3MvqdU6oFP1mKXCEpw" DesignTimeRectangle="56, 628, 463, 273" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="086b99df-3eb7-4cc1-ab80-f9eccfb7a7f9" InformativeScreenshot="873ee8c0e447522d696fdd181e18a43d.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/D8K9kz-KlEqFbdMy9DR41A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Top 10 Movies on Netflix Right Now' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dtTopNetflix Is Nothing Then&#xA;    Throw New Exception(&quot;dtTopNetflix este Nothing (nu a fost umplut de Extract Table Data).&quot;)&#xA;End If&#xA;&#xA;If dtTopNetflix.Rows.Count = 0 Then&#xA;    Throw New Exception(&quot;dtTopNetflix nu conține niciun rând. Verifică Extract Table Data.&quot;)&#xA;End If&#xA;&#xA;If dtTopNetflix.Rows.Count &lt; 5 Then&#xA;    Throw New Exception(&quot;Sunt mai puțin de 5 filme în tabelul Netflix.&quot;)&#xA;End If&#xA;&#xA;Dim random As New Random()&#xA;filmeSelectate = New List(Of String)&#xA;Dim indexuriSelectate As New List(Of Integer)&#xA;&#xA;While filmeSelectate.Count &lt; 5&#xA;    ' index între 0 și Rows.Count - 1&#xA;    Dim index As Integer = random.Next(0, dtTopNetflix.Rows.Count)&#xA;&#xA;    If Not indexuriSelectate.Contains(index) Then&#xA;        ' ia prima coloană (titlul filmului)&#xA;        Dim titlu As String = dtTopNetflix.Rows(index)(0).ToString().Trim()&#xA;&#xA;        filmeSelectate.Add(titlu)&#xA;        indexuriSelectate.Add(index)&#xA;    End If&#xA;End While" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="542,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="sd2:DataTable" x:Key="dtTopNetflix">[dtTopNetflix]</InArgument>
+                <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="filmeSelectate">[filmeSelectate]</OutArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+            <ui:BuildDataTable DataTable="[tabelFilme]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="542,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Nume_x0020_Film&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Durata&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tomatometer&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Popcornmeter&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Descriere&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFilm" sap:VirtualizedContainerService.HintSize="542,2461" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[filmeSelectate]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentFilm" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,2330" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rotten Tomatoes Movies  TV Shows  Movi(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="506,2270" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="1fca7219-23d7-43bc-ab62-b7cc281e38a7" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="504,2080" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="descriere" />
+                              <Variable x:TypeArguments="x:String" Name="durata" />
+                              <Variable x:TypeArguments="x:String" Name="tomatometer" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'wicker'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,242" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="1fca7219-23d7-43bc-ab62-b7cc281e38a7" Text="[CurrentFilm + &quot;[k(enter)]&quot;]" Version="V5">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="rottentomatoes.com/m/kpop_demon_hunters" CVScreenId="abb8e51e-46ee-4055-81d0-db64576dbebf" ContentHash="cwaNxzycCEO_3ZornZSgLQ" CvElementArea="495, 303, 340, 34" CvType="InputBox" DesignTimeRectangle="494, 305, 342, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="26dc848c-2601-4248-a50f-0fc8c18954b0" InformativeScreenshot="cc13e01f79e921c1130bdedaae64d8c9.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/jFgJ5LfzHE-RqsYXvPJEBA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KPop Demon Hunters | Rotten Tomatoes' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '13% -- (2025) Josh Hutc…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,190" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fca7219-23d7-43bc-ab62-b7cc281e38a7" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="rottentomatoes.com/search" CVScreenId="a22b398a-c21a-4f51-bc5d-7a590b7f2a68" ContentHash="3de63wYZrUmlyB2POgFvag" DesignTimeRectangle="495, 507, 164, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='       *                                  Five Nights at Freddy&amp;apos;s 2                                     ' parentid='search-results' tag='A' /&gt;" Guid="eb1fcd40-86b7-4251-a058-745089d32d93" InformativeScreenshot="fae64da037eb1adbec9e0184516cedfb.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/B3Ng2NkXpkGeonhXm4A8oA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search Results | Rotten Tomatoes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Text '1h 44m,'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,139" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="1fca7219-23d7-43bc-ab62-b7cc281e38a7" Version="V5">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="rottentomatoes.com/m/five_nights_at_freddys_2" CVScreenId="433adf18-9fd6-440d-b440-97b8ae498338" ContentHash="t6AJqrhze0qDujr7qtChTw" CvType="AnyWordGroup" DesignTimeRectangle="457, 494, 56, 18" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='6' parentid='hero-wrap' tag='RT-TEXT' /&gt;" Guid="c5bb653a-0565-4d86-910f-34eefcfddacd" InformativeScreenshot="ad2a25882093161e6c6123658f16792f.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/ROvokAUdG0e7ikO4EKBMUA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Five Nights at Freddy&amp;apos;s 2 | Rotten Tomatoes' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,549" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                              <TryCatch.Try>
+                                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="468,190" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DisplayName="Get Text '88%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,130" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="1fca7219-23d7-43bc-ab62-b7cc281e38a7" TextString="[tomatometer]" Version="V5">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="rottentomatoes.com/m/five_nights_at_freddys_2" CVScreenId="6f0009aa-5ec0-4aae-8dcc-c451391fd4d9" ContentHash="aiVHX9BjuUyh-lLh16PnEA" CvType="AnyWordGroup" DesignTimeRectangle="534, 629, 60, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='button' tag='RT-TEXT' /&gt;" Guid="57e22b3b-ca36-4e17-9de8-fde5d8992b39" InformativeScreenshot="109b759ddcc4168e7142b9cb0067167f.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/ng1U6FmyHkWb7_9j8VnMCg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Five Nights at Freddy&amp;apos;s 2 | Rotten Tomatoes' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                </Sequence>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[tomatometer]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">Not available</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                              <TryCatch.Finally>
+                                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </TryCatch.Finally>
+                            </TryCatch>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,549" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                              <TryCatch.Try>
+                                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="468,190" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DisplayName="Get Text '95%'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,130" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="1fca7219-23d7-43bc-ab62-b7cc281e38a7" TextString="[popcornmeter]" Version="V5">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="rottentomatoes.com/m/five_nights_at_freddys_2" CVScreenId="6f0009aa-5ec0-4aae-8dcc-c451391fd4d9" ContentHash="aE603hgtyUiLJy3o5R8ldQ" CvType="AnyWordGroup" DesignTimeRectangle="664, 629, 110, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='button' idx='3' tag='RT-TEXT' /&gt;" Guid="9f61777d-d360-4a7b-8127-4d2ef25ea7bc" InformativeScreenshot="5f4a0dbc2c8c3dd3cd9013bb6158333d.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/p0KauqXIiUmixiCE6Q8koA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Five Nights at Freddy&amp;apos;s 2 | Rotten Tomatoes' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                </Sequence>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[popcornmeter]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">Not available</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                              <TryCatch.Finally>
+                                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </TryCatch.Finally>
+                            </TryCatch>
+                            <uix:NGetText DisplayName="Get Text 'Wicked, the untold stor…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,139" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="1fca7219-23d7-43bc-ab62-b7cc281e38a7" TextString="[descriere]" Version="V5">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="rottentomatoes.com/m/wicked_2024" ContentHash="y8FUO0yrYUaUrUHb5hVcSw" DesignTimeRectangle="40, 502, 467, 320" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;media-scorecard&amp;gt;div&amp;gt;drawer-more&amp;gt;rt-text' parentid='modules-wrap' tag='RT-TEXT' /&gt;" Guid="26139b58-2751-4f47-8f3f-4bde48ea0a7f" InformativeScreenshot="21ecd231ee7af1560c07a860337b255e.png" Reference="0P78M_ZrPEWgjvj0oIhKBQ/R4iub2CGZ0avzVa5Kn2TRA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wicked (2024) | Rotten Tomatoes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{currentFilm, durata, tomatometer, popcornmeter, descriere}]" DataTable="[tabelFilme]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="470,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.OCREngine>
+                        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                          <ActivityFunc.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                          </ActivityFunc.Argument>
+                        </ActivityFunc>
+                      </uix:NApplicationCard.OCREngine>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-7, 0, 590, 959" BrowserType="Chrome" ContentHash="lgTheBOwmUygLiNrBatwqw" IconBase64="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" InformativeScreenshot="8afcaeac17cc3f9175192fd86366dd12.jpg" Reference="0P78M_ZrPEWgjvj0oIhKBQ/WkX12uyLEkCq5wNJJlrU3A" Selector="&lt;html app='chrome.exe' title='Rotten Tomatoes: Movies | TV Shows | Movie Trailers | Reviews | Rotten Tomatoes' /&gt;" Url="https://www.rottentomatoes.com/" Version="V2" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <ui:CreateFile PathResource="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="542,176" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="NetflixTop5.csv" Output="[fisiereCSV]" Path="[caleCSV]" />
+            <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[tabelFilme]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" sap:VirtualizedContainerService.HintSize="542,264" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[fisiereCSV]" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 968" BrowserType="Chrome" ContentHash="VenvjCTd-k6Uufop9GxjNg" IconBase64="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" InformativeScreenshot="eb1ea9e3aeb3574f9650eb69bed77718.jpg" Reference="0P78M_ZrPEWgjvj0oIhKBQ/qmbcSaAiK02fbPqK9-J-QQ" Selector="&lt;html app='chrome.exe' title='Top 10 Movies on Netflix Right Now' /&gt;" Url="https://www.netflix.com/tudum/top10" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
